@@ -1,5 +1,6 @@
 import fs from 'fs';
 import inquirer from 'inquirer';
+import generateMarkdown from './generateMarkdown';
 
 
 // TODO: Include packages needed for this application
@@ -47,12 +48,16 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-
+    fs.writeFile('README.md', generateMarkdown(data))
+    err ? console.error(err) : console.log('success');
 }
 
 // TODO: Create a function to initialize app
 function init() {
-    // this will call inquirer.prompt(...) .then(...)
+    inquirer
+        .prompt(questions);
+    .then()
+    // unfinished
 }
 
 // Function call to initialize app
