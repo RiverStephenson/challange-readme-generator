@@ -1,6 +1,6 @@
 import fs from 'fs';
 import inquirer from 'inquirer';
-import generateMarkdown from './generateMarkdown';
+import generateMarkdown from './generateMarkdown.js';
 
 
 // TODO: Include packages needed for this application
@@ -48,17 +48,17 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile('README.md', generateMarkdown(data))
-    err ? console.error(err) : console.log('success');
+    fs.writeFile(fileName, generateMarkdown(data),
+    err => err ? console.error(err) : console.log('success'))
 }
-
 // TODO: Create a function to initialize app
 function init() {
     inquirer
-        .prompt(questions);
-    .then()
-    // unfinished
-}
-
+        .prompt(questions)
+        .then((data) => {
+            console.log(data);
+            writeToFile('genREADME.md', data);
+        })
+};
 // Function call to initialize app
 init();
