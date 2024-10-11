@@ -10,7 +10,10 @@ Here is the GitHub link https://github.com/RiverStephenson/rivers-readme-generat
 
 ## Usage
 
-Once you're in the proper directory inside th terminal, type "node index.js" into the command line. You will then be prompted with a list of questions about your project and your answers will then be generated into a markdown file called "genREADME.md". That's your new README file.
+Once you're in the proper directory inside the terminal, type "node index.js" into the command line. You will then be prompted with a list of questions about your project and your answers will then be generated into a markdown file called "genREADME.md". That's your new README file.
+
+https://drive.google.com/file/d/1FYKwFdDAElp6Td10JBL8g_NUZ91R1Pun/view?usp=drive_link
+
 
 ## Credits
 
