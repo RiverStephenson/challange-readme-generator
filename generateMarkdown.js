@@ -21,7 +21,7 @@ function renderLicenseLink(license) {
     return "https://www.boost.org/LICENSE_1_0.txt"
   } else if (license === "Eclipse") {
     return "https://opensource.org/licenses/EPL-1.0"
-  } else if (license === undefined) {
+  } else {
     return ""
   };
 }
@@ -42,30 +42,31 @@ function renderLicenseSection(license) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+  const {title, description, installation, usage, credits, license} = data;
+  return `# ${title}
 ## Description
 
-${data.description} 
+${description} 
 
 ## Installation
 
-${data.installation}
+${installation}
 
 ## Usage
 
-${data.usage}
+${usage}
 
 ## Credits
 
-${data.credits}
+${credits}
 
 ## License
 
-${renderLicenseLink(data.license)} ${renderLicenseSection(data.license)}
+${renderLicenseLink(license)} ${renderLicenseSection(license)}
 
 ## Badges
 
-${renderLicenseBadge(data.license)}
+${renderLicenseBadge(license)}
 `;
 }
 

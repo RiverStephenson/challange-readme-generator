@@ -32,14 +32,10 @@ const questions = [
         message: "Anyone or anything to credit?"
     },
     {
-        type: "input",
+        type: 'list',
         name: "license",
-        message: "Provide the license used for your project."
-    },
-    {
-        type: "input",
-        name: "badges",
-        message: "Provide the badges used for your project"
+        message: "Provide the license used for your project.",
+        choices: ['Apache', 'Boost', 'Eclipse']
     },
 ];
 
