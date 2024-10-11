@@ -38,7 +38,7 @@ const questions = [
         choices: ['Apache', 'Boost', 'Eclipse']
     },
 ];
-
+// These are all the questions that will be prompted to the user
 
 
 // TODO: Create a function to write README file
@@ -46,6 +46,8 @@ function writeToFile(fileName, data) {
     fs.writeFile(fileName, generateMarkdown(data),
     err => err ? console.error(err) : console.log('success'))
 }
+// This function creates a markdown file and uses the provided data the create the file.
+
 // TODO: Create a function to initialize app
 function init() {
     inquirer
@@ -55,5 +57,7 @@ function init() {
             writeToFile('genREADME.md', data);
         })
 };
+// This function prompts the user the questions and stores the responses
+
 // Function call to initialize app
 init();
