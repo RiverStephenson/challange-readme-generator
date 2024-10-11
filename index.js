@@ -1,9 +1,8 @@
+// TODO: Include packages needed for this application
 import fs from 'fs';
 import inquirer from 'inquirer';
 import generateMarkdown from './generateMarkdown.js';
 
-
-// TODO: Include packages needed for this application
 
 // TODO: Create an array of questions for user input
 const questions = [
