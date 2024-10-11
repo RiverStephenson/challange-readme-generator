@@ -17,7 +17,9 @@ I'd like to thank my mom and dad
 
 ## License
 
-https://www.boost.org/LICENSE_1_0.txt The license used for this project was Boost
+https://www.boost.org/LICENSE_1_0.txt
+
+ The license used for this project was Boost
 
 ## Badges
 
