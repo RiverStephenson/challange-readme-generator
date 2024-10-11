@@ -61,11 +61,11 @@ ${data.credits}
 
 ## License
 
-${data.license}
+${renderLicenseLink(data.license)} ${renderLicenseSection(data.license)}
 
 ## Badges
 
-${data.badges}
+${renderLicenseBadge(data.license)}
 `;
 }
 
